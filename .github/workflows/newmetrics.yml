@@ -16,7 +16,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: profile/flixprime.svg
           user: FlixPrime-TV
-          base: header, activity, community, metadata
+          base: header, activity, community, metadata, repositories
           config_display: columns
           plugin_introduction: yes
           plugin_languages: false
@@ -30,3 +30,9 @@ jobs:
           plugin_repositories_featured: FlixPrime-TV/flixprime.tv, FlixPrime-TV/auth.flixprime.tv, FlixPrime-TV/faily.flixprime.tv, FlixPrime-TV/click.flixprime.tv, FlixPrime-TV/soz.flixprime.tv
           plugin_traffic: false
           plugin_lines: yes        
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 0
+          plugin_activity_filter: ref/create, comment, issue, pr, push, review, release
+          plugin_activity_visibility: 'all'
+          plugin_activity_skipped: '.github'
