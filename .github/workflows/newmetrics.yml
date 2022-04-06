@@ -26,7 +26,7 @@ jobs:
           plugin_languages_limit: 8
           plugin_people: yes
           plugin_people_types: members
-          plugin_repositories: false
+          plugin_repositories: true
           plugin_repositories_featured: FlixPrime-TV/flixprime.tv, FlixPrime-TV/auth.flixprime.tv, FlixPrime-TV/faily.flixprime.tv, FlixPrime-TV/click.flixprime.tv, FlixPrime-TV/soz.flixprime.tv
           plugin_traffic: false
           plugin_lines: yes        
