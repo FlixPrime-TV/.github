@@ -64,7 +64,6 @@ jobs:
           plugin_followup_indepth: yes
           plugin_contributors: yes
           plugin_contributors_contributions: yes
-          plugin_contributors_contributions: yes
   flixprime-click-flixprime-tv-repo:
     runs-on: ubuntu-latest
     steps:
@@ -81,7 +80,6 @@ jobs:
           plugin_followup: yes
           plugin_followup_indepth: yes
           plugin_contributors: yes
-          plugin_contributors_contributions: yes
           plugin_contributors_contributions: yes
   flixprime-soz-flixprime-tv-repo:
     runs-on: ubuntu-latest
@@ -100,7 +98,6 @@ jobs:
           plugin_followup_indepth: yes
           plugin_contributors: yes
           plugin_contributors_contributions: yes
-          plugin_contributors_contributions: yes
   flixprime-api-flixprime-tv-repo:
     runs-on: ubuntu-latest
     steps:
@@ -117,5 +114,4 @@ jobs:
           plugin_followup: yes
           plugin_followup_indepth: yes
           plugin_contributors: yes
-          plugin_contributors_contributions: yes
           plugin_contributors_contributions: yes
