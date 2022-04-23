@@ -7,32 +7,17 @@ on:
       - main
   workflow_dispatch:
 jobs:
-  github-metrics-personal:
+  flixprime-organization-metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: FlixPrimeTV metrics
+      - name: FlixPrimeTV Organization
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: profile/flixprime.svg
           user: FlixPrime-TV
-          base: header, activity, community, metadata, repositories
-          config_display: columns
-          plugin_introduction: yes
-          plugin_languages: false
-          plugin_languages_ignored: >-
-            tex, less, dockerfile, makefile, qmake, lex, cmake, gnuplot
-          plugin_languages_details: bytes-size, percentage
-          plugin_languages_limit: 8
-          plugin_people: yes
-          plugin_people_types: members
-          plugin_repositories: true
-          plugin_repositories_featured: FlixPrime-TV/flixprime.tv, FlixPrime-TV/auth.flixprime.tv, FlixPrime-TV/faily.flixprime.tv, FlixPrime-TV/click.flixprime.tv, FlixPrime-TV/soz.flixprime.tv
-          plugin_traffic: false
-          plugin_lines: yes        
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 0
-          plugin_activity_filter: ref/create, comment, issue, pr, push, review, release
-          plugin_activity_visibility: 'all'
-          plugin_activity_skipped: '.github'
+          base: ""
+          plugin_pagespeed: yes
+          plugin_pagespeed_detailed: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_pagespeed_url: https://lecoq.io
