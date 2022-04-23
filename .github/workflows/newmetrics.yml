@@ -17,6 +17,7 @@ jobs:
           filename: profile/metrics/flixprimetv.metrics.svg
           user: FlixPrime-TV
           base: header
+          config_display: columns
           config_order: base.header, introduction, habits, people, pagespeed
           plugin_lines: yes
           plugin_introduction: yes
