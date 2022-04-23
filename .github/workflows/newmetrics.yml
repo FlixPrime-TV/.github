@@ -49,6 +49,9 @@ jobs:
           plugin_followup: yes
           plugin_followup_indepth: yes
           plugin_contributors: yes
+          plugin_languages: yes
+          plugin_languages_details: lines, bytes-size, percentage
+          plugin_languages_limit: 4
   flixprime-faily-flixprime-tv-repo:
     runs-on: ubuntu-latest
     steps:
@@ -66,6 +69,9 @@ jobs:
           plugin_followup_indepth: yes
           plugin_contributors: yes
           plugin_contributors_contributions: yes
+          plugin_languages: yes
+          plugin_languages_details: lines, bytes-size, percentage
+          plugin_languages_limit: 4
   flixprime-click-flixprime-tv-repo:
     runs-on: ubuntu-latest
     steps:
@@ -83,6 +89,9 @@ jobs:
           plugin_followup_indepth: yes
           plugin_contributors: yes
           plugin_contributors_contributions: yes
+          plugin_languages: yes
+          plugin_languages_details: lines, bytes-size, percentage
+          plugin_languages_limit: 4
   flixprime-soz-flixprime-tv-repo:
     runs-on: ubuntu-latest
     steps:
@@ -100,6 +109,9 @@ jobs:
           plugin_followup_indepth: yes
           plugin_contributors: yes
           plugin_contributors_contributions: yes
+          plugin_languages: yes
+          plugin_languages_details: lines, bytes-size, percentage
+          plugin_languages_limit: 4
   flixprime-api-flixprime-tv-repo:
     runs-on: ubuntu-latest
     steps:
@@ -117,3 +129,6 @@ jobs:
           plugin_followup_indepth: yes
           plugin_contributors: yes
           plugin_contributors_contributions: yes
+          plugin_languages: yes
+          plugin_languages_details: lines, bytes-size, percentage
+          plugin_languages_limit: 4
