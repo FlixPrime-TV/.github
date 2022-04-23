@@ -14,9 +14,19 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: profile/flixprime.svg
+          filename: profile/metrics/flixprimetv.metrics.svg
           user: FlixPrime-TV
-          base: ""
+          base: header
+          plugin_lines: yes
+          plugin_introduction: yes
+          plugin_introduction_title: no
+          plugin_habits: yes
+          plugin_habits_facts: no
+          plugin_habits_charts: yes
+          config_timezone: Europe/Paris
+          plugin_people: yes
+          plugin_people_types: members,followers
+          #plugin_people_thanks: ,thanks
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
@@ -24,12 +34,12 @@ jobs:
   flixprime-flixprime-tv-repo:
     runs-on: ubuntu-latest
     steps:
-      - name: FlixPrimeTV FlixPrime.tv repo
+      - name: FlixPrimeTV FlixPrime.tv Repository Metrics
         uses: lowlighter/metrics@latest
         with:
           template: repository
           config_display: regular
-          filename: metrics.repository.svg
+          filename: profile/metrics/repositories/flixprime.tv.metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           user: FlixPrime-TV
           repo: flixprime.tv
@@ -37,4 +47,75 @@ jobs:
           plugin_followup: yes
           plugin_followup_indepth: yes
           plugin_contributors: yes
+  flixprime-faily-flixprime-tv-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: FlixPrimeTV FailyFlixPrime Repository Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          template: repository
+          config_display: regular
+          filename: profile/metrics/repositories/faily.flixprime.tv.metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: FlixPrime-TV
+          repo: faily.flixprime.tv
+          plugin_lines: yes
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          plugin_contributors: yes
+          plugin_contributors_contributions: yes
+          plugin_contributors_contributions: yes
+  flixprime-click-flixprime-tv-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: FlixPrimeTV ClickFlixPrime Repository Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          template: repository
+          config_display: regular
+          filename: profile/metrics/repositories/click.flixprime.tv.metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: FlixPrime-TV
+          repo: click.flixprime.tv
+          plugin_lines: yes
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          plugin_contributors: yes
+          plugin_contributors_contributions: yes
+          plugin_contributors_contributions: yes
+  flixprime-soz-flixprime-tv-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: FlixPrimeTV SOZFlixPrime Repository Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          template: repository
+          config_display: regular
+          filename: profile/metrics/repositories/soz.flixprime.tv.metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: FlixPrime-TV
+          repo: soz.flixprime.tv
+          plugin_lines: yes
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          plugin_contributors: yes
+          plugin_contributors_contributions: yes
+          plugin_contributors_contributions: yes
+  flixprime-api-flixprime-tv-repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: FlixPrimeTV FlixPrime API Repository Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          template: repository
+          config_display: regular
+          filename: profile/metrics/repositories/api.flixprime.tv.metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: FlixPrime-TV
+          repo: api.flixprime.tv
+          plugin_lines: yes
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          plugin_contributors: yes
+          plugin_contributors_contributions: yes
           plugin_contributors_contributions: yes
