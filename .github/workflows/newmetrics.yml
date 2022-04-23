@@ -45,7 +45,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: FlixPrime-TV
           repo: flixprime.tv
-          config_order: base.header, followup, languages
+          config_order: base.header, languages, followup
           plugin_lines: yes
           plugin_followup: yes
           plugin_followup_indepth: yes
@@ -65,7 +65,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: FlixPrime-TV
           repo: faily.flixprime.tv
-          config_order: base.header, followup, languages
+          config_order: base.header, languages, followup
           plugin_lines: yes
           plugin_followup: yes
           plugin_followup_indepth: yes
@@ -86,7 +86,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: FlixPrime-TV
           repo: click.flixprime.tv
-          config_order: base.header, followup, languages
+          config_order: base.header, languages, followup
           plugin_lines: yes
           plugin_followup: yes
           plugin_followup_indepth: yes
@@ -107,7 +107,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: FlixPrime-TV
           repo: soz.flixprime.tv
-          config_order: base.header, followup, languages
+          config_order: base.header, languages, followup
           plugin_lines: yes
           plugin_followup: yes
           plugin_followup_indepth: yes
@@ -128,7 +128,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: FlixPrime-TV
           repo: api.flixprime.tv
-          config_order: base.header, followup, languages
+          config_order: base.header, languages, followup
           plugin_lines: yes
           plugin_followup: yes
           plugin_followup_indepth: yes
