@@ -32,7 +32,7 @@ jobs:
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-          plugin_pagespeed_url: https://lecoq.io
+          plugin_pagespeed_url: https://flixprime.tv
   flixprime-flixprime-tv-repo:
     runs-on: ubuntu-latest
     steps:
